@@ -21,7 +21,6 @@ def load_model(model_path):
 
 
 def inference(left, right, model, n_iter=20):
-    print("Model Forwarding...")
     imgL = left.transpose(2, 0, 1)
     imgR = right.transpose(2, 0, 1)
     imgL = np.ascontiguousarray(imgL[None, :, :, :])
